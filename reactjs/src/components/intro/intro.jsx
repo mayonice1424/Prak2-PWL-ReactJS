@@ -32,20 +32,42 @@ const useStyles = createUseStyles({
     display: "flex",
   },
   contact: {
-    potition: "fixed",
-    marginTop: "-8rem",
-    marginLeft: "10rem",
-    position: "fixed",
-    display: "inline-block",
-    padding: "2% 8%",
-    color: "white",
+    alignItems: "center",
+    backgroundImage: "linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB)",
+    border: 0,
+    borderRadius: "8px",
+    boxShadow: "rgba(151, 65, 252, 0.2) 0 15px 30px -5px",
+    boxSizing: "border-box",
+    color: "#FFFFFF",
+    display: "flex",
+    fontFamily: "Phantomsans, sans-serif",
+    fontSize: "20px",
+    justifyContent: "center",
+    lineHeight: "1em",
+    maxWidth: "20%",
+    minWidth: "140px",
+    padding: "19px 24px",
+    marginLeft: "10%",
+    marginTop: "-10%",
     textDecoration: "none",
-    textTransform: "uppercase",
-    fontSize: "1rem",
-    letterSpacing: "0.1rem",
-    borderRadius: "40px",
-    background: "linear-gradient( 90deg, #0162c8, #55e7fc)",
+    userSelect: "none",
+    webkitUserSelect: "none",
+    touchAction: "manipulation",
+    whiteSpace: "nowrap",
+    cursor: "pointer",
   },
+
+  // .button-63:active,
+  // .button-63:hover {
+  //   outline: 0;
+  // }
+
+  // @media (min-width: 768px) {
+  //   .button-63 {
+  //     font-size: 24px;
+  //     min-width: 196px;
+  //   }
+  // }
 });
 export default function Intro() {
   const classes = useStyles();
@@ -70,7 +92,11 @@ export default function Intro() {
           />
         </div>
       </div>
-      <a className={classes.contact} href="https://bit.ly/linkWaIlham">
+      <a
+        className={classes.contact}
+        role="button"
+        href="https://bit.ly/linkWaIlham"
+      >
         Contact
       </a>
     </div>

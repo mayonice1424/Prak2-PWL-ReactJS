@@ -6,24 +6,26 @@ import { createUseStyles } from "react-jss";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Topbar from "./components/topbar/topbar";
 const useStyles = createUseStyles({
-  App: {
-    height: "calc(100vh - 70px)",
-    width: "100%",
-    backgroundColor: "white",
+  ".app": {
+    height: "100vh",
   },
-  //   sections: {
-  //     width: "100%",
-  //     height: "calc(100vh - 70px)",
-  //     backgroundColor: "rgb(24, 235, 221)",
-  //     position: "relative",
-  //     top: "70px",
-  //     // scrollbar-width: none; //for firefox
-  //     scrollSnapType: "y mandatory",
-  //     "&::-webkit-scrollbar ": {
-  //       //chrome, safari, ms edge
-  //       display: "none",
-  //     },
-  //   },
+  ".app .sections": {
+    width: "100%",
+    height: "calc(100vh - 70px)",
+    backgroundColor: "#18ebdd",
+    position: "relative",
+    top: "70px",
+    scrollBehavior: "smooth",
+    scrollSnapType: "y mandatory",
+  },
+  ".app .sections::-webkit-scrollbar": {
+    display: "none",
+  },
+  ".app .sections > *": {
+    width: "100vw",
+    height: "calc(100vh - 70px)",
+    scrollSnapAlign: "start",
+  },
 });
 
 function App() {
