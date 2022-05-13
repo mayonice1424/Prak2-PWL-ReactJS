@@ -1,15 +1,22 @@
 import React from "react";
 import { createUseStyles } from "react-jss";
 import "./intro.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 const useStyles = createUseStyles({
+  container: {
+    width: "100%",
+    position: "absolute",
+  },
   intro: {
     marginTop: "10%",
     fontFamily: "Poppins",
+    fontWeight: "initial",
     paddingLeft: "10%",
     potition: "fixed",
   },
   wannabe: {
     fontFamily: "Poppins",
+    fontWeight: "initial",
     paddingLeft: "10%",
     marginTop: "-20px",
     potition: "fixed",
@@ -26,12 +33,13 @@ const useStyles = createUseStyles({
     height: "15rem",
     padding: "4rem",
     borderRadius: "100%",
-    potition: "fixed",
+    position: "fixed",
   },
   layout: {
     display: "flex",
   },
   contact: {
+    position: "absolute",
     alignItems: "center",
     backgroundImage: "linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB)",
     border: 0,
@@ -48,7 +56,7 @@ const useStyles = createUseStyles({
     minWidth: "140px",
     padding: "19px 24px",
     marginLeft: "10%",
-    marginTop: "-10%",
+    marginTop: "5%",
     textDecoration: "none",
     userSelect: "none",
     webkitUserSelect: "none",
@@ -56,28 +64,26 @@ const useStyles = createUseStyles({
     whiteSpace: "nowrap",
     cursor: "pointer",
   },
-
-  // .button-63:active,
-  // .button-63:hover {
-  //   outline: 0;
-  // }
-
-  // @media (min-width: 768px) {
-  //   .button-63 {
-  //     font-size: 24px;
-  //     min-width: 196px;
-  //   }
-  // }
+  typewriter: {
+    color: "red",
+    fontWeight: "bold",
+    marginLeft: "10px",
+  },
 });
 export default function Intro() {
   const classes = useStyles();
+  const { text } = useTypewriter({
+    words: ["UI/UX Designer", "Front-End Developer"],
+    loop: { 3: true },
+    onLoopDone: () => console.log(`loop completed after 3 runs.`),
+  });
   return (
-    <div>
+    <div className={classes.container}>
       <div className={classes.layout}>
         <div>
           <h1 className={classes.intro}>Hello, I'm Ilham </h1>
           <h3 className={classes.wannabe}>
-            Front-End Developer and UI/UX Designer
+            I am a<span className={classes.typewriter}>{text}</span>
           </h3>
           <p className={classes.caption}>
             Mid level experience in web design and development knowledge. I'm
@@ -92,13 +98,15 @@ export default function Intro() {
           />
         </div>
       </div>
-      <a
-        className={classes.contact}
-        role="button"
-        href="https://bit.ly/linkWaIlham"
-      >
-        Contact
-      </a>
+      <div>
+        <a
+          className={classes.contact}
+          role="button"
+          href="https://bit.ly/linkWaIlham"
+        >
+          Contact
+        </a>
+      </div>
     </div>
   );
 }

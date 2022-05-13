@@ -11,17 +11,24 @@ const useStyles = createUseStyles({
     color: "#000",
     padding: "10px 0px",
     scrollSnapType: "y mandatory",
+    top: 0,
+    zIndex: 2,
   },
-  wrapper: {
-    fontFamily: "Poppins",
-    height: 70,
-    color: "black",
-    backgroundColor: "white",
+  ".topbar .wrapper": {
+    padding: "10px 30px",
+    display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    flexDirection: "row",
-    display: "flex",
-    position: "relative",
+  },
+  ".topbar .wrapper .left .logo": {
+    fontSize: "40px",
+    fontWeight: "700",
+    textDecoration: "none",
+    color: "inherit",
+    cursor: "pointer",
+  },
+  ".topbar .wrapper .left .logo:hover": {
+    color: "#ffff",
   },
   nav_link: {
     display: "inline-block",
@@ -77,35 +84,33 @@ const useStyles = createUseStyles({
 export default function () {
   const classes = useStyles();
   return (
-    <div>
-      <div className={classes.topbar} id="topbar">
-        <div className={classes.wrapper}>
-          <div className={classes.left}>
-            <nav>
-              <ul className={classes.nav_link}>
-                <li className={classes.nav_link}>
-                  <Link className={classes.logo} to="/">
-                    <p>Portofolio&nbsp;</p>
-                  </Link>
-                </li>
-                <li className={classes.nav_link}>
-                  <Link className={classes.a} to="/project">
-                    <p>Project&nbsp;</p>
-                  </Link>
-                </li>
-                <li className={classes.nav_link}>
-                  <Link className={classes.a} to="/about">
-                    <p>About&nbsp;</p>
-                  </Link>
-                </li>
-                <li className={classes.nav_link}>
-                  <Link className={classes.a} to="/skills">
-                    <p>Skills&nbsp;</p>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <div className={classes.topbar} id="topbar">
+      <div className={classes.wrapper}>
+        <div className={classes.left}>
+          <nav>
+            <ul className={classes.nav_link}>
+              <li className={classes.nav_link}>
+                <Link className={classes.logo} to="/">
+                  <p>Portofolio&nbsp;</p>
+                </Link>
+              </li>
+              <li className={classes.nav_link}>
+                <Link className={classes.a} to="/project">
+                  <p>Project&nbsp;</p>
+                </Link>
+              </li>
+              <li className={classes.nav_link}>
+                <Link className={classes.a} to="/about">
+                  <p>About&nbsp;</p>
+                </Link>
+              </li>
+              <li className={classes.nav_link}>
+                <Link className={classes.a} to="/skills">
+                  <p>Skills&nbsp;</p>
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
