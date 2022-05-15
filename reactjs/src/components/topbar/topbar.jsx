@@ -13,6 +13,7 @@ const useStyles = createUseStyles({
     scrollSnapType: "y mandatory",
     top: 0,
     zIndex: 2,
+    marginTop: "0px",
   },
   ".topbar .wrapper": {
     padding: "10px 30px",

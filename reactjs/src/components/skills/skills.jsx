@@ -5,7 +5,7 @@ import "./skills.css";
 export default function Skills() {
   return (
     <div>
-      <p> ini adalah skills skills</p>
+      <p> ini adalah skills </p>
     </div>
   );
 }

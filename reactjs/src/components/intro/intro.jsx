@@ -31,12 +31,12 @@ const useStyles = createUseStyles({
   foto: {
     width: "15rem",
     height: "15rem",
-    padding: "4rem",
     borderRadius: "100%",
     position: "fixed",
   },
   layout: {
     display: "flex",
+    width: "100%",
   },
   contact: {
     position: "absolute",
