@@ -21,7 +21,7 @@ function App() {
       <Router>
         <Topbar />
         <Routes>
-          <Route path="/Prak2-PWL-ReactJS/" element={<Intro />} />
+          <Route path="/" element={<Intro />} />
           <Route path="/project" element={<Project />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/about" element={<About />} />
