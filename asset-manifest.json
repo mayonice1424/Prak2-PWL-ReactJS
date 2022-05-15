@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Prak2-PWL-ReactJS/static/css/main.274e74b8.css",
-    "main.js": "/Prak2-PWL-ReactJS/static/js/main.68789db8.js",
+    "main.js": "/Prak2-PWL-ReactJS/static/js/main.1ebc1ec8.js",
     "static/js/787.fade2e9e.chunk.js": "/Prak2-PWL-ReactJS/static/js/787.fade2e9e.chunk.js",
     "index.html": "/Prak2-PWL-ReactJS/index.html",
     "main.274e74b8.css.map": "/Prak2-PWL-ReactJS/static/css/main.274e74b8.css.map",
-    "main.68789db8.js.map": "/Prak2-PWL-ReactJS/static/js/main.68789db8.js.map",
+    "main.1ebc1ec8.js.map": "/Prak2-PWL-ReactJS/static/js/main.1ebc1ec8.js.map",
     "787.fade2e9e.chunk.js.map": "/Prak2-PWL-ReactJS/static/js/787.fade2e9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.274e74b8.css",
-    "static/js/main.68789db8.js"
+    "static/js/main.1ebc1ec8.js"
   ]
 }
