@@ -21,7 +21,7 @@ function App() {
       <Router>
         <Topbar />
         <Routes>
-          <Route path="/" element={<Intro />} />
+          <Route exact path="/" element={<Intro />} />
           <Route path="/project" element={<Project />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/about" element={<About />} />
