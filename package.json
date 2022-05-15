@@ -2,7 +2,7 @@
   "name": "reactjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mayonice1424.github.io",
+  "homepage": "https://mayonice1424.github.io/Prak2-PWL-ReactJS/",
   "dependencies": {
     "@mui/icons-material": "^5.6.1",
     "@testing-library/jest-dom": "^5.16.4",
