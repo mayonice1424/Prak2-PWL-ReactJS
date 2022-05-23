@@ -8,8 +8,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Topbar from "./components/topbar/topbar";
 const useStyles = createUseStyles({
   ".app": {
-    height: "auto",
-    width: "100%",
+    width: "100vw",
     top: "70px",
   },
 });
@@ -17,7 +16,7 @@ const useStyles = createUseStyles({
 function App() {
   const classes = useStyles();
   return (
-    <div className={classes.App}>
+    <div className={classes.app}>
       <Router>
         <Topbar />
         <Routes>

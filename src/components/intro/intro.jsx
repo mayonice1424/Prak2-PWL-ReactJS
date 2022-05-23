@@ -5,7 +5,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 const useStyles = createUseStyles({
   container: {
     width: "100%",
-    position: "absolute",
+    backgroundColor: "white",
+    height: "100vh",
+    position: "fixed",
   },
   intro: {
     marginTop: "10%",
@@ -33,8 +35,10 @@ const useStyles = createUseStyles({
     height: "15rem",
     borderRadius: "100%",
     position: "fixed",
+    marginTop: "3%",
   },
   layout: {
+    paddingTop: "10%",
     display: "flex",
     width: "100%",
   },
@@ -98,15 +102,13 @@ export default function Intro() {
           />
         </div>
       </div>
-      <div>
-        <a
-          className={classes.contact}
-          role="button"
-          href="https://bit.ly/linkWaIlham"
-        >
-          Contact
-        </a>
-      </div>
+      <a
+        className={classes.contact}
+        role="button"
+        href="https://bit.ly/linkWaIlham"
+      >
+        Contact
+      </a>
     </div>
   );
 }

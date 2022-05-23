@@ -14,6 +14,7 @@ const useStyles = createUseStyles({
     top: 0,
     zIndex: 2,
     marginTop: "0px",
+    position: "fixed",
   },
   ".topbar .wrapper": {
     padding: "10px 30px",
@@ -33,7 +34,8 @@ const useStyles = createUseStyles({
   },
   nav_link: {
     display: "inline-block",
-    padding: "0px 20px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
     listStyle: "none",
     fontSize: "20px",
     textDecoration: "none",
@@ -82,36 +84,34 @@ const useStyles = createUseStyles({
   },
 });
 
-export default function () {
+export default function Topbar() {
   const classes = useStyles();
   return (
     <div className={classes.topbar} id="topbar">
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <nav>
-            <ul className={classes.nav_link}>
-              <li className={classes.nav_link}>
-                <Link className={classes.logo} to="/">
-                  <p>Portofolio&nbsp;</p>
-                </Link>
-              </li>
-              <li className={classes.nav_link}>
-                <Link className={classes.a} to="/project">
-                  <p>Project&nbsp;</p>
-                </Link>
-              </li>
-              <li className={classes.nav_link}>
-                <Link className={classes.a} to="/about">
-                  <p>About&nbsp;</p>
-                </Link>
-              </li>
-              <li className={classes.nav_link}>
-                <Link className={classes.a} to="/skills">
-                  <p>Skills&nbsp;</p>
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <ul className={classes.nav_link}>
+            <li className={classes.nav_link}>
+              <Link className={classes.logo} to="/">
+                <p>Portofolio&nbsp;</p>
+              </Link>
+            </li>
+            <li className={classes.nav_link}>
+              <Link className={classes.a} to="/project">
+                <p>Project&nbsp;</p>
+              </Link>
+            </li>
+            <li className={classes.nav_link}>
+              <Link className={classes.a} to="/about">
+                <p>About&nbsp;</p>
+              </Link>
+            </li>
+            <li className={classes.nav_link}>
+              <Link className={classes.a} to="/skills">
+                <p>Skills&nbsp;</p>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
