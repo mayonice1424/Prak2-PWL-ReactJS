@@ -7,8 +7,8 @@ const useStyles = createUseStyles({
   topbar: {
     width: "100%",
     height: 70,
-    backgroundColor: "white",
-    color: "#000",
+    backgroundColor: "#202020",
+    color: "white",
     padding: "10px 0px",
     scrollSnapType: "y mandatory",
     top: 0,
@@ -26,7 +26,7 @@ const useStyles = createUseStyles({
     fontSize: "40px",
     fontWeight: "700",
     textDecoration: "none",
-    color: "inherit",
+    color: "white",
     cursor: "pointer",
   },
   ".topbar .wrapper .left .logo:hover": {
@@ -43,7 +43,7 @@ const useStyles = createUseStyles({
     justifyContent: "center",
     cursor: "pointer",
     "&:hover": {
-      color: "#606273",
+      color: "white",
     },
   },
   a: {
@@ -51,10 +51,10 @@ const useStyles = createUseStyles({
     fontFamily: "roboto",
     paddingRight: 20,
     textDecoration: "none",
-    color: "black",
+    color: "white",
     cursor: "pointer",
     "&:hover": {
-      color: "#606273",
+      color: "white",
     },
     "&.selected, &.active": {
       border: "1px solid red",
@@ -67,7 +67,7 @@ const useStyles = createUseStyles({
     fontFamily: "poppins",
     paddingRight: 20,
     textDecoration: "none",
-    color: "black",
+    color: "white",
     cursor: "pointer",
     "&:hover": {
       color: "#606273",
@@ -93,7 +93,7 @@ export default function Topbar() {
           <ul className={classes.nav_link}>
             <li className={classes.nav_link}>
               <Link className={classes.logo} to="/">
-                <p>Portofolio&nbsp;</p>
+                <p className={classes.text}>Portofolio&nbsp;</p>
               </Link>
             </li>
             <li className={classes.nav_link}>
